@@ -15,7 +15,7 @@ const styles = (theme) => ({
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: 'center',
-		padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3} px ${theme.spacing.unit * 3}px`
+		padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`
 	},
 	avatar: {
 		margin: theme.spacing.unit,
@@ -29,5 +29,4 @@ const styles = (theme) => ({
 		marginTop: theme.spacing.unit * 3
 	}
 });
-
 export default styles;

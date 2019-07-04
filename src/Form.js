@@ -28,7 +28,7 @@ class Form extends Component {
 					<Select value="english">
 						<MenuItem value="english">English</MenuItem>
 						<MenuItem value="Spanish">Spanish</MenuItem>
-						<MenuItem value="Hebrew">Hebrew</MenuItem>
+						<MenuItem value="Hebrew">עברית</MenuItem>
 					</Select>
 					<form className={classes.form}>
 						<FormControl margin="normal" required fullWidth>
