@@ -8,13 +8,16 @@ import SearchIcon from '@material-ui/icons/Search';
 import Switch from '@material-ui/core/Switch';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles/NavBarStyles';
+import { ThemeContext } from './contexts/ThemeContext';
 
 class Navbar extends Component {
+	static contextType = ThemeContext;
 	render() {
+		const { isDarkMode } = this.context;
 		const { classes } = this.props;
 		return (
 			<div className={classes.root}>
-				<AppBar position="static" color="primary">
+				<AppBar position="static" color={isDarkMode ? 'default' : 'primary'}>
 					<Toolbar>
 						<IconButton className={classes.menuButtoon} colors="inherit">
 							<span>🇮🇱</span>
