@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
+import React, { Fragment, Component } from 'react';
 import Navbar from './Navbar';
+import Form from './Form';
 
 class App extends Component {
 	render() {
 		return (
-			<div>
-				<Navbar />
-			</div>
+			<Fragment>
+				<div>
+					<Navbar />
+					<Form />
+				</div>
+			</Fragment>
 		);
 	}
 }
